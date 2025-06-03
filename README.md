@@ -4,28 +4,38 @@ This Python-based project ranks PDF resumes based on their relevance to a specif
 
 ---
 
-## 🚀 Features
+## 🎯 What It Does
 
-- 📄 Extracts text from multiple PDF resumes using `pdfplumber`
-- 🧠 Uses `spaCy` for text preprocessing (lemmatization, stopword removal, etc.)
-- 📈 Converts documents into TF-IDF vectors and compares using cosine similarity
-- 📋 Outputs a ranked list of resumes and saves it to a CSV file
-- 🏅 Displays top terms from the best-matching resume
+📄 PDF Text Extraction: Grabs content from multiple resumes with pdfplumber
+
+🧠 Smart Text Cleaning: Preps text with spaCy — lemmatizes, removes noise (stopwords), and gets it ready for analysis
+
+📊 Vectorization & Comparison: Turns resumes and job description into TF-IDF vectors, compares them using cosine similarity
+
+🥇 Rank & Report: Outputs a ranked list of resumes, saves results as CSV for easy sharing
+
+🔍 Insight Spotlight: Shows the top keywords from the top-scoring resume
+
+
 
 ---
 
-## 📁 Folder Structure
+## 🗂️ Project Setup — Folder Layout
 
 resume-ranking-nlp/
-├── main.py
-├── ranking_reporting.py
-├── resume_processing.py
-├── resumes/ # Place all PDF resumes here
-├── Top_resumes_<...>.csv # Output will be saved here
 
-yaml
-Copy
-Edit
+│
+
+├── main.py                   # 🚦 Entry point — run this!
+
+├── ranking_reporting.py      # 📝 Reporting & ranking logic
+
+├── resume_processing.py      # 📑 Resume parsing & preprocessing
+
+├── resumes/                  # 📂 Drop all PDF resumes here
+
+└── Top_resumes_<timestamp>.csv  # 🏆 Output saved here
+
 
 ---
 
@@ -33,71 +43,74 @@ Edit
 
 Install dependencies:
 
-```bash
-pip install pdfplumber spacy scikit-learn
-python -m spacy download en_core_web_sm
-📌 Usage
-Place all resume PDFs inside the resumes/ folder.
+`pip install pdfplumber spacy scikit-learn`
 
-Edit the job title and job description in main.py.
+`python -m spacy download en_core_web_sm`
 
-Run the script:
+---
 
-bash
-Copy
-Edit
-python main.py
-View the results in the terminal and check the CSV output.
+## ⚡ How to Use
 
-🧪 Example
-bash
-Copy
-Edit
-🔹 Ranked Resumes Based on Relevance:
-1. john_doe.pdf - Score: 85.23%
-2. jane_smith.pdf - Score: 72.45%
+📂 Put all the PDF resumes you want to rank inside the resumes/ folder.
 
-Top terms in best matching resume: ['data', 'analysis', 'sql', 'python', 'tableau', 'insight'...]
-📌 Use Case
-This tool can help:
+✍️ Customize your target job title and job description in main.py.
 
-HR professionals shortlist relevant resumes faster.
+🚀 Run the ranking engine:
 
-Developers build intelligent filtering into job portals or recruitment systems.
+   `python main.py`
 
-Anyone looking to apply NLP to a real-world task.
 
-🧠 Tech Stack
-Python
+---
 
-spaCy (en_core_web_sm)
+## 🧪 Sample Output
+Top-ranked resumes by relevance:
+1️⃣ john_doe.pdf — Score: 85.23%
+2️⃣ jane_smith.pdf — Score: 72.45%
 
-pdfplumber
+Key skills spotlight:
+['data', 'analysis', 'sql', 'python', 'tableau', 'insight'...]
 
-scikit-learn (TF-IDF, cosine similarity)
+---
 
-📄 License
+## 💼 Who Benefits?
+
+🧑‍💼 HR pros speeding up candidate screening
+
+👨‍💻 Developers building smarter job portals or ATS systems
+
+🤓 NLP enthusiasts solving real-world challenges
+
+---
+
+## 🧰 Tech Stack
+
+🐍 Python
+
+💡 spaCy (en_core_web_sm)
+
+📄 pdfplumber
+
+📈 scikit-learn (TF-IDF, cosine similarity)
+
+---
+
+## 📜 License
 This project is open-source under the MIT License.
 
-🙌 Contributions
+---
+
+## 🙌 Contributions
+
 Pull requests are welcome. For major changes, please open an issue first.
 
-✨ Future Improvements
-GUI with Streamlit or Flask
-
-Add support for DOCX resumes
-
-Use deep learning models (e.g., BERT embeddings)
-
-Ranking explanation dashboard
-
-yaml
-Copy
-Edit
-
 ---
 
+## 🔮 Future Improvements
 
----
+🎨 GUI with Streamlit or Flask
 
-Let me know if you want this converted to a downloadable `.md` file or tailored further with project screenshots, links, or demo GIFs.
+📄 Add support for DOCX resumes
+
+🤖 Use deep learning models (e.g., BERT embeddings)
+
+📊 Ranking explanation dashboard

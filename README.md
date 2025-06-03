@@ -23,42 +23,42 @@ resume-ranking-nlp/
 ├── resumes/ # Place all PDF resumes here
 ├── Top_resumes_<...>.csv # Output will be saved here
 
-yaml
-Copy
-Edit
-
 ---
 
 ## 🛠️ Requirements
 
 Install dependencies:
 
-```bash
 pip install pdfplumber spacy scikit-learn
 python -m spacy download en_core_web_sm
-📌 Usage
-Place all resume PDFs inside the resumes/ folder.
 
-Edit the job title and job description in main.py.
+---
 
-Run the script:
+## 📌 Usage
 
-bash
-Copy
-Edit
+1. Place all resume PDFs inside the resumes/ folder.
+
+2. Edit the job title and job description in main.py.
+
+3. Run the script:
+
 python main.py
-View the results in the terminal and check the CSV output.
+
+
+---
 
 🧪 Example
-bash
-Copy
-Edit
+
 🔹 Ranked Resumes Based on Relevance:
 1. john_doe.pdf - Score: 85.23%
 2. jane_smith.pdf - Score: 72.45%
 
 Top terms in best matching resume: ['data', 'analysis', 'sql', 'python', 'tableau', 'insight'...]
+
+---
+
 📌 Use Case
+
 This tool can help:
 
 HR professionals shortlist relevant resumes faster.
@@ -67,7 +67,10 @@ Developers build intelligent filtering into job portals or recruitment systems.
 
 Anyone looking to apply NLP to a real-world task.
 
+---
+
 🧠 Tech Stack
+
 Python
 
 spaCy (en_core_web_sm)
@@ -79,10 +82,16 @@ scikit-learn (TF-IDF, cosine similarity)
 📄 License
 This project is open-source under the MIT License.
 
+---
+
 🙌 Contributions
+
 Pull requests are welcome. For major changes, please open an issue first.
 
+---
+
 ✨ Future Improvements
+
 GUI with Streamlit or Flask
 
 Add support for DOCX resumes
@@ -90,13 +99,6 @@ Add support for DOCX resumes
 Use deep learning models (e.g., BERT embeddings)
 
 Ranking explanation dashboard
-
-yaml
-Copy
-Edit
-
----
-
 
 ---
 

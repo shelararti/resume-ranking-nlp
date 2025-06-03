@@ -34,8 +34,9 @@ resume-ranking-nlp/
 
 Install dependencies:
 
-pip install pdfplumber spacy scikit-learn
-python -m spacy download en_core_web_sm
+`pip install pdfplumber spacy scikit-learn`
+
+`python -m spacy download en_core_web_sm`
 
 ---
 
@@ -47,7 +48,7 @@ python -m spacy download en_core_web_sm
 
 3. Run the script:
 
-   python main.py
+   `python main.py`
 
 
 ---

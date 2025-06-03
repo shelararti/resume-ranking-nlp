@@ -17,10 +17,15 @@ This Python-based project ranks PDF resumes based on their relevance to a specif
 ## 📁 Folder Structure
 
 resume-ranking-nlp/
+
 ├── main.py
+
 ├── ranking_reporting.py
+
 ├── resume_processing.py
+
 ├── resumes/ # Place all PDF resumes here
+
 ├── Top_resumes_<...>.csv # Output will be saved here
 
 ---
@@ -42,7 +47,7 @@ python -m spacy download en_core_web_sm
 
 3. Run the script:
 
-python main.py
+   python main.py
 
 
 ---
@@ -61,23 +66,25 @@ Top terms in best matching resume: ['data', 'analysis', 'sql', 'python', 'tablea
 
 This tool can help:
 
-HR professionals shortlist relevant resumes faster.
+- HR professionals shortlist relevant resumes faster.
 
-Developers build intelligent filtering into job portals or recruitment systems.
+- Developers build intelligent filtering into job portals or recruitment systems.
 
-Anyone looking to apply NLP to a real-world task.
+- Anyone looking to apply NLP to a real-world task.
 
 ---
 
 🧠 Tech Stack
 
-Python
+- Python
 
-spaCy (en_core_web_sm)
+- spaCy (en_core_web_sm)
 
-pdfplumber
+- pdfplumber
 
-scikit-learn (TF-IDF, cosine similarity)
+- scikit-learn (TF-IDF, cosine similarity)
+
+---
 
 📄 License
 This project is open-source under the MIT License.
@@ -92,13 +99,13 @@ Pull requests are welcome. For major changes, please open an issue first.
 
 ✨ Future Improvements
 
-GUI with Streamlit or Flask
+- GUI with Streamlit or Flask
 
-Add support for DOCX resumes
+- Add support for DOCX resumes
 
-Use deep learning models (e.g., BERT embeddings)
+- Use deep learning models (e.g., BERT embeddings)
 
-Ranking explanation dashboard
+- Ranking explanation dashboard
 
 ---
 

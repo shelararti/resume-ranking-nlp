@@ -63,8 +63,11 @@ Install dependencies:
 ---
 
 ## 🧪 Sample Output
+
 Top-ranked resumes by relevance:
+
 1️⃣ john_doe.pdf — Score: 85.23%
+
 2️⃣ jane_smith.pdf — Score: 72.45%
 
 Key skills spotlight:

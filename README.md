@@ -4,29 +4,38 @@ This Python-based project ranks PDF resumes based on their relevance to a specif
 
 ---
 
-## 🚀 Features
+## 🎯 What It Does
 
-- 📄 Extracts text from multiple PDF resumes using `pdfplumber`
-- 🧠 Uses `spaCy` for text preprocessing (lemmatization, stopword removal, etc.)
-- 📈 Converts documents into TF-IDF vectors and compares using cosine similarity
-- 📋 Outputs a ranked list of resumes and saves it to a CSV file
-- 🏅 Displays top terms from the best-matching resume
+📄 PDF Text Extraction: Grabs content from multiple resumes with pdfplumber
+
+🧠 Smart Text Cleaning: Preps text with spaCy — lemmatizes, removes noise (stopwords), and gets it ready for analysis
+
+📊 Vectorization & Comparison: Turns resumes and job description into TF-IDF vectors, compares them using cosine similarity
+
+🥇 Rank & Report: Outputs a ranked list of resumes, saves results as CSV for easy sharing
+
+🔍 Insight Spotlight: Shows the top keywords from the top-scoring resume
+
+
 
 ---
 
-## 📁 Folder Structure
+## 🗂️ Project Setup — Folder Layout
 
 resume-ranking-nlp/
 
-├── main.py
+│
 
-├── ranking_reporting.py
+├── main.py                   # 🚦 Entry point — run this!
 
-├── resume_processing.py
+├── ranking_reporting.py      # 📝 Reporting & ranking logic
 
-├── resumes/ # Place all PDF resumes here
+├── resume_processing.py      # 📑 Resume parsing & preprocessing
 
-├── Top_resumes_<...>.csv # Output will be saved here
+├── resumes/                  # 📂 Drop all PDF resumes here
+
+└── Top_resumes_<timestamp>.csv  # 🏆 Output saved here
+
 
 ---
 
@@ -40,74 +49,68 @@ Install dependencies:
 
 ---
 
-## 📌 Usage
+## ⚡ How to Use
 
-1. Place all resume PDFs inside the resumes/ folder.
+📂 Put all the PDF resumes you want to rank inside the resumes/ folder.
 
-2. Edit the job title and job description in main.py.
+✍️ Customize your target job title and job description in main.py.
 
-3. Run the script:
+🚀 Run the ranking engine:
 
    `python main.py`
 
 
 ---
 
-🧪 Example
+## 🧪 Sample Output
+Top-ranked resumes by relevance:
+1️⃣ john_doe.pdf — Score: 85.23%
+2️⃣ jane_smith.pdf — Score: 72.45%
 
-🔹 Ranked Resumes Based on Relevance:
-1. john_doe.pdf - Score: 85.23%
-2. jane_smith.pdf - Score: 72.45%
-
-Top terms in best matching resume: ['data', 'analysis', 'sql', 'python', 'tableau', 'insight'...]
-
----
-
-📌 Use Case
-
-This tool can help:
-
-- HR professionals shortlist relevant resumes faster.
-
-- Developers build intelligent filtering into job portals or recruitment systems.
-
-- Anyone looking to apply NLP to a real-world task.
+Key skills spotlight:
+['data', 'analysis', 'sql', 'python', 'tableau', 'insight'...]
 
 ---
 
-🧠 Tech Stack
+## 💼 Who Benefits?
 
-- Python
+🧑‍💼 HR pros speeding up candidate screening
 
-- spaCy (en_core_web_sm)
+👨‍💻 Developers building smarter job portals or ATS systems
 
-- pdfplumber
-
-- scikit-learn (TF-IDF, cosine similarity)
+🤓 NLP enthusiasts solving real-world challenges
 
 ---
 
-📄 License
+## 🧰 Tech Stack
+
+🐍 Python
+
+💡 spaCy (en_core_web_sm)
+
+📄 pdfplumber
+
+📈 scikit-learn (TF-IDF, cosine similarity)
+
+---
+
+## 📜 License
 This project is open-source under the MIT License.
 
 ---
 
-🙌 Contributions
+## 🙌 Contributions
 
 Pull requests are welcome. For major changes, please open an issue first.
 
 ---
 
-✨ Future Improvements
+## 🔮 Future Improvements
 
-- GUI with Streamlit or Flask
+🎨 GUI with Streamlit or Flask
 
-- Add support for DOCX resumes
+📄 Add support for DOCX resumes
 
-- Use deep learning models (e.g., BERT embeddings)
+🤖 Use deep learning models (e.g., BERT embeddings)
 
-- Ranking explanation dashboard
-
----
-
-Let me know if you want this converted to a downloadable `.md` file or tailored further with project screenshots, links, or demo GIFs.
+📊 Ranking explanation dashboard
